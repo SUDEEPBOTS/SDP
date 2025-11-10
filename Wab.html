@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nickname Designer</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="loading-screen" class="full-screen dark-bg flex-center">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+  </div>
+
+  <div id="main-app" class="hidden dark-bg flex-center flex-column">
+    <div class="input-container">
+      <input type="text" id="name-input" placeholder="Enter your name" autocomplete="off" />
+      <div class="buttons">
+        <button id="back-btn" class="btn animated-btn" disabled>Back</button>
+        <button id="next-btn" class="btn animated-btn">Next</button>
+      </div>
+    </div>
+
+    <div id="name-display" class="name-display hidden animated-text"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
